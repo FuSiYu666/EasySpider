@@ -4,13 +4,27 @@
 
 A visual browser automation test/data collection/crawler software, which can be used to design and execute tasks in a code-free visual way. You only need to select the content you want to operate on the web page and follow the prompts to complete the design and execution of the task. At the same time, the software can also be executed separately in the command line, so that it can be easily embedded into other systems.
 
+## 下载易采集/Download EasySpider
+
+进入 [Releases Page](https://github.com/NaiboWang/EasySpider/releases) 下载最新版本。如果下载速度慢，可以考虑中国境内下载地址：[中国境内下载地址](https://www.easyspider.cn/download.html)。
+
+Refer to the [Releases Page](https://github.com/NaiboWang/EasySpider/releases) to download the latest version of EasySpider.
+
 ## 赞助者/Sponsors
+
+<a target="_blank" href="https://www.proxy302.com/"><img src="media/Proxy302.jpg" width=850></img></a>
+
+[Proxy302](https://www.proxy302.com/)是一个全球代理IP自助超市。按需付费，无需套餐捆绑购买；无阶梯式定价，充值即可使用所有类型的代理IP；免费测试，注册获取$1测试额度。覆盖全球240＋国家和地区，6500万个住宅IP可供选择。Proxy302可配合EasySpider进行数据采集。
+
+<a target="_blank" href="https://www.123proxy.cn/?utm_source=EasySpider"><img src="media/123proxy.png" width=850></img></a>
+
+[123Proxy](https://www.123proxy.cn/?utm_source=EasySpider)是企业级海外代理IP提供商, 拥有独家的8000万+代理IP池，190+国家覆盖，真实家庭住宅IP，适合各种用途的数据采集类任务。它支持免费测试2-4小时，**点击上方图片注册**联系客服即可获取；它还支持15%返现活动，给公司购买代理可以返现到个人，直接微信/支付宝返现，打工人的小福利。123Proxy可配合EasySpider进行数据采集。
 
 <a target="_blank" href="https://get.brightdata.com/naibowang"><img src="media/BrightData.png" width=250></img></a>
 
 [亮数据BrightData](https://get.brightdata.com/naibowang)是代理市场领导者，覆盖全球的7200万IP，提供真人住宅IP，即时批量采集网络公开数据，成功率亲测有保证。需要性价比高代理IP的可**点击上方图片注册**后联系中文客服，开通后免费试用，**最高可得250美金折扣**。BrightData可配合EasySpider进行数据采集。
 
-<a target="_blank" href="https://www.capsolver.com/zh?utm_source=github&utm_medium=banner_github&utm_campaign=easyspider"><img src="media/capsolver.jpg" width=400></img></a>
+<a target="_blank" href="https://www.capsolver.com/zh?utm_source=github&utm_medium=banner_github&utm_campaign=easyspider"><img src="media/capsolver.jpg" width=600></img></a>
 
 <!-- [![Capsolver](media/capsolver.jpg)](https://www.capsolver.com/zh?utm_source=github&utm_medium=banner_github&utm_campaign=easyspider) -->
 
@@ -23,6 +37,8 @@ For developers, Capsolver offers API integration options detailed in their [docu
 访问易采集官网：www.easyspider.cn
 
 Visit the official website of EasySpider: www.easyspider.net
+
+## 软件使用示例/Software Usage Example
 
 ### 示例1/Example 1
 
@@ -49,12 +65,6 @@ At the same time, if you select the 'Loop-click every element' option after sele
 更多特性请翻到页面底部查看。
 
 More features please scroll to the bottom of this page to view.
-
-## 下载易采集/Download EasySpider
-
-进入 [Releases Page](https://github.com/NaiboWang/EasySpider/releases) 下载最新版本。如果下载速度慢，可以考虑中国境内下载地址：[中国境内下载地址](https://www.easyspider.cn/download.html)。
-
-Refer to the [Releases Page](https://github.com/NaiboWang/EasySpider/releases) to download the latest version of EasySpider.
 
 ## 支持作者/Support Author
 
