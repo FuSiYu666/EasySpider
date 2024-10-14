@@ -108,7 +108,7 @@ Finally, copy the `stealth.min.js` and `execute.bat` (for Windows x64) file in t
 
 ### NodeJS环境|NodeJS Environment
 
-1. Windows环境下需要先安装`VS Build Tools 2017` （[https://aka.ms/vs/15/release/vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)）的`Visual C++ Build Tools`组件，不然下面的命令无法执行，其他系统不需要。
+1. Windows环境下需要先下载`VS Build Tools 2017` （[https://aka.ms/vs/15/release/vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)）并勾选安装其中的`Visual C++ Build Tools（Visual C++生成工具）`组件，不然下面的命令无法执行，其他系统不需要。
 2. 安装`NodeJS`：[https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/)。
 3. 运行下面的命令来安装依赖：
 
@@ -117,11 +117,11 @@ npm install
 npm install @electron-forge/cli -g
 ```
 
-如果上面的命令运行速度很慢可以参考NodeJS换源说明：[https://blog.csdn.net/qq_23211463/article/details/123769061](https://blog.csdn.net/qq_23211463/article/details/123769061)。
+如果上面的命令运行速度很慢可以参考NodeJS换源说明：[https://blog.csdn.net/qq_23211463/article/details/123769061](https://blog.csdn.net/qq_23211463/article/details/123769061)，[https://blog.csdn.net/qq_38463737/article/details/140277803](https://blog.csdn.net/qq_38463737/article/details/140277803)。
 
 -----
 
-1. On Windows, you need to install `VS Build Tools 2017` (https://aka.ms/vs/15/release/vs_buildtools.exe, select and install the `Visual C++ Build Tools` component) first for node-gyp to install `node-windows-manager` (No need for other OS).
+1. On Windows, you need to download `VS Build Tools 2017` (https://aka.ms/vs/15/release/vs_buildtools.exe, select and install the `Visual C++ Build Tools` component) first for node-gyp to install `node-windows-manager` (No need for other OS).
 2. Install `NodeJS`: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 3. Run the following commands to install NodeJS packages:
 
@@ -160,6 +160,8 @@ But so far can only design the task, can not execute the task, want to execute t
 npx electron-forge import
 npm run package
 ```
+
+如果任务执行到`npm install electron-squirrel-startup`的步骤时卡死，请参考下面的换源教程：[https://blog.csdn.net/qq_38463737/article/details/140277803](https://blog.csdn.net/qq_38463737/article/details/140277803)。
 
 -----
 
