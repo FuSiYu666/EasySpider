@@ -108,7 +108,7 @@ Finally, copy the `stealth.min.js` and `execute.bat` (for Windows x64) file in t
 
 ### NodeJS环境|NodeJS Environment
 
-1. Windows环境下需要先下载`VS Build Tools 2017` （[https://aka.ms/vs/15/release/vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)）并勾选安装其中的`Visual C++ Build Tools（Visual C++生成工具）`组件以便`node-gyp`模块来安装`node-windows-manager`，不然下面的命令无法执行，其他系统不需要。同时，Python3也需要安装在系统中并配置好环境变量。
+1. Windows环境下需要先下载`VS Build Tools 2017` （[https://aka.ms/vs/15/release/vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)）并勾选安装其中的`Visual C++ Build Tools（Visual C++生成工具）`组件以便`node-gyp`模块来安装`node-windows-manager`，不然下面的命令无法执行，其他系统不需要。同时，`Python3`也需要安装在系统中并配置好环境变量。
 2. 安装`NodeJS`：[https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/)。
 3. 运行下面的命令来安装依赖：
 
@@ -120,7 +120,7 @@ npm install
 
 -----
 
-1. On Windows, you need to download `VS Build Tools 2017` (https://aka.ms/vs/15/release/vs_buildtools.exe, select and install the `Visual C++ Build Tools` component) first for the module `node-gyp` to install `node-windows-manager` (No need for other OS). Meanwhile, Python3 needs to be installed and the environment variables need to be configured.
+1. On Windows, you need to download `VS Build Tools 2017` (https://aka.ms/vs/15/release/vs_buildtools.exe, select and install the `Visual C++ Build Tools` component) first for the module `node-gyp` to install `node-windows-manager` (No need for other OS). Meanwhile, `Python3` needs to be installed and the environment variables need to be configured.
 2. Install `NodeJS`: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 3. Run the following commands to install NodeJS packages:
 
@@ -152,7 +152,7 @@ But so far can only design the task, can not execute the task, want to execute t
 
 打包发布前，确保执行阶段程序`easyspider_executestage(.exe)`已放入`chrome(_win64)`文件夹内，且浏览器插件`EasySpider_zh.crx`已经是最新版本。
 
-执行下面的命令即可打包（需要安装Git）：
+执行下面的命令即可打包（需要安装`Git`）：
 
 ```
 npm run package
@@ -162,7 +162,7 @@ npm run package
 
 Before packaging and releasing, make sure that the task execution program `easyspider_executestage(.exe)` is placed inside the `chrome(_win64)` folder and that the browser extension `EasySpider_en.crx` is the latest version. 
 
-After finishing developing, package software by the following command (Git is required):
+After finishing developing, package software by the following command (`Git` is required):
 
 ```
 npm run package
