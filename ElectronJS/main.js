@@ -114,6 +114,7 @@ let handle_pairs = {};
 let socket_window = null;
 let socket_start = null;
 let socket_flowchart = null;
+let socket_popup = null;
 let invoke_window = null;
 
 // var ffi = require('ffi-napi');
@@ -150,8 +151,8 @@ function createWindow() {
         server_address +
         "/index.html?user_data_folder=" +
         config.user_data_folder +
-        "&copyright=" +
-        config.copyright,
+        "&copyright=" + config.copyright +
+        "&lang=" + config.lang,
         {extraHeaders: "pragma: no-cache\n"}
     );
     // 隐藏菜单栏
@@ -162,9 +163,8 @@ function createWindow() {
             app.quit();
         }
     });
+    //调试模式
     // mainWindow.webContents.openDevTools();
-    // Open the DevTools.
-    // mainWindow.webContents.openDevTools()
 }
 
 async function findElementRecursive(driver, by, value, frames) {
@@ -1125,6 +1125,20 @@ async function beginInvoke(msg, ws) {
         } catch {
             console.log("Cannot get Cookies");
         }
+    } else if (msg.type == 30) {
+        send_message_to_browser(
+            JSON.stringify({
+                type: "showAllToolboxes"
+            })
+        );
+        console.log("Show all toolboxes");
+    } else if (msg.type == 31) {
+        send_message_to_browser(
+            JSON.stringify({
+                type: "hideAllToolboxes"
+            })
+        );
+        console.log("Hide all toolboxes");
     }
 }
 
@@ -1268,6 +1282,9 @@ wss.on("connection", function (ws) {
                 //     console.log("socket_flowchart closed");
                 // });
                 console.log("set socket_flowchart at time: ", new Date());
+            } else if (msg.message.id == 3) {
+                socket_popup = ws;
+                console.log("set socket_popup at time: ", new Date());
             } else {
                 //其他的ID是用来标识不同的浏览器标签页的
                 // await new Promise(resolve => setTimeout(resolve, 200));
@@ -1558,6 +1575,17 @@ app.whenReady().then(() => {
             path.join(task_server.getDir(), "config.json"),
             JSON.stringify(config)
         );
+        //重新读取配置文件
+        config = JSON.parse(fs.readFileSync(path.join(task_server.getDir(), "config.json")));
+    });
+    ipcMain.on("change-lang", function (event, arg) {
+        config.lang = arg;
+        fs.writeFileSync(
+            path.join(task_server.getDir(), "config.json"),
+            JSON.stringify(config)
+        );
+        //重新读取配置文件
+        config = JSON.parse(fs.readFileSync(path.join(task_server.getDir(), "config.json")));
     });
     createWindow();
 
